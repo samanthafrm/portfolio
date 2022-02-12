@@ -1,0 +1,20 @@
+.container-iam{
+    width: 100%;
+    height: max-content;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 0;
+
+    .texts-iam{
+        text-align: center;
+        h1{
+            font-weight: 600;
+            font-size: 2.5em;
+        }
+        h2{
+            font-weight: 300;
+        }
+    }
+}

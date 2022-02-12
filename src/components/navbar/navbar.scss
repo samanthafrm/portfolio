@@ -1,0 +1,82 @@
+.container-navbar {
+  background-color: rgb(26, 25, 25);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.055);
+  width: 100%;
+  height: max-content;
+  padding: 0.5em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  .div-hamburger {
+    font-size: 2.5em;
+    color: white;
+    display: flex;
+    padding-right: 0.5em;
+  }
+
+  .div-logo,
+  .menu {
+    display: none;
+  }
+  .menu-mobile {
+    width: 100%;
+    text-align: center;
+
+    div {
+      padding: 2em;
+      width: 100%;
+      
+      &:hover {
+        background-color: rgb(44, 44, 44);
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        box-shadow: none;
+
+        &:hover {
+          color: var(--color-pink);
+        }
+      }
+    }
+  }
+  .menu-mobile-disable {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-navbar {
+    // background-color: red;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 4em;
+    .div-hamburger {
+      display: none;
+    }
+    .div-logo {
+      display: block;
+      span {
+        color: var(--color-pink);
+      }
+    }
+    .menu {
+      display: flex;
+
+      div {
+        padding: 0 1em;
+        a {
+          text-decoration: none;
+          color: white;
+          box-shadow: none;
+
+          &:hover {
+            color: var(--color-pink);
+          }
+        }
+      }
+    }
+  }
+}
